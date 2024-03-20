@@ -29,8 +29,10 @@ classifiers = [
   "Topic :: Scientific/Engineering",
   "Typing :: Typed",
 ]
-dynamic = ["version"]
-dependencies = []
+dynamic = ["version", "dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
 
 [project.scripts]
 getyarn = "getyarn.cli:main"
