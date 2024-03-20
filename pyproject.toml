@@ -32,6 +32,9 @@ classifiers = [
 dynamic = ["version"]
 dependencies = []
 
+[project.scripts]
+getyarn = "getyarn.cli:main"
+
 [project.optional-dependencies]
 test = [
   "pytest >=6",
