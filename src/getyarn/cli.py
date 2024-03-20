@@ -8,11 +8,11 @@ from .getyarn import get_yarn
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Get and merge video clips from https://getyarn.io/")
     parser.add_argument("url", help="Yarn URL")
     parser.add_argument("output", type=str, help="Output file")
     parser.add_argument(
-        "--next-clips", type=int, default=0, help="Number of next clips to download"
+        "--next-clips", type=int, default=0, help="Number of next clips to download and merge"
     )
     return parser.parse_args()
 
